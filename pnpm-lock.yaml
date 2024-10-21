@@ -14,17 +14,29 @@ importers:
       eslint:
         specifier: ^9.11.1
         version: 9.12.0
+      eslint-plugin-react-hooks:
+        specifier: ^5.1.0-rc.0
+        version: 5.1.0-rc-fb9a90fa48-20240614(eslint@9.12.0)
+      eslint-plugin-react-perf:
+        specifier: ^3.3.3
+        version: 3.3.3(eslint@9.12.0)
+      eslint-plugin-react-refresh:
+        specifier: ^0.4.12
+        version: 0.4.12(eslint@9.12.0)
       eslint-plugin-unicorn:
         specifier: ^56.0.0
         version: 56.0.0(eslint@9.12.0)
+      globals:
+        specifier: ^15.11.0
+        version: 15.11.0
       npm-run-all:
         specifier: ^4.1.5
         version: 4.1.5
       typescript:
-        specifier: ^5.3.3
+        specifier: ^5.6.3
         version: 5.6.3
       typescript-eslint:
-        specifier: ^8.7.0
+        specifier: ^8.9.0
         version: 8.9.0(eslint@9.12.0)(typescript@5.6.3)
 
   apps/client:
@@ -36,38 +48,20 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@eslint/js':
-        specifier: ^9.11.1
-        version: 9.12.0
       '@types/react':
-        specifier: ^18.3.10
+        specifier: ^18.3.11
         version: 18.3.11
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: ^18.3.1
         version: 18.3.1
       '@vitejs/plugin-react':
         specifier: ^4.3.2
         version: 4.3.2(vite@5.4.9)
-      eslint:
-        specifier: ^9.11.1
-        version: 9.12.0
-      eslint-plugin-react-hooks:
-        specifier: ^5.1.0-rc.0
-        version: 5.1.0-rc-fb9a90fa48-20240614(eslint@9.12.0)
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.12
-        version: 0.4.12(eslint@9.12.0)
-      globals:
-        specifier: ^15.9.0
-        version: 15.11.0
       typescript:
-        specifier: ^5.5.3
+        specifier: ^5.6.3
         version: 5.6.3
-      typescript-eslint:
-        specifier: ^8.7.0
-        version: 8.9.0(eslint@9.12.0)(typescript@5.6.3)
       vite:
-        specifier: ^5.4.8
+        specifier: ^5.4.9
         version: 5.4.9
 
   apps/server:
@@ -90,6 +84,10 @@ importers:
       morgan:
         specifier: ~1.9.1
         version: 1.9.1
+    devDependencies:
+      globals:
+        specifier: ^15.11.0
+        version: 15.11.0
 
 packages:
 
@@ -912,6 +910,12 @@ packages:
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
+
+  eslint-plugin-react-perf@3.3.3:
+    resolution: {integrity: sha512-EzPdxsRJg5IllCAH9ny/3nK7sv9251tvKmi/d3Ouv5KzI8TB3zNhzScxL9wnh9Hvv8GYC5LEtzTauynfOEYiAw==}
+    engines: {node: '>=6.9.1'}
+    peerDependencies:
+      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
 
   eslint-plugin-react-refresh@0.4.12:
     resolution: {integrity: sha512-9neVjoGv20FwYtCP6CB1dzR1vr57ZDNOXst21wd2xJ/cTlM2xLq0GWVlSNTdMn/4BtP6cHYBMCSp1wFBJ9jBsg==}
@@ -2824,6 +2828,10 @@ snapshots:
   escape-string-regexp@4.0.0: {}
 
   eslint-plugin-react-hooks@5.1.0-rc-fb9a90fa48-20240614(eslint@9.12.0):
+    dependencies:
+      eslint: 9.12.0
+
+  eslint-plugin-react-perf@3.3.3(eslint@9.12.0):
     dependencies:
       eslint: 9.12.0
 
