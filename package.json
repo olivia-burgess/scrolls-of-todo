@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "run-p dev:*",
     "dev:client": "pnpm --filter @scrolls/client run dev",
-    "dev:server": "pnpm --filter @scrolls/server run start"
+    "dev:server": "pnpm --filter @scrolls/server run start",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
